@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+/*css reset*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family:'Lato', sans-serif;
+    font-size: small;
+	background-color: hsl(214, 41%, 97%);
+}
+
+.container{
+	width: 37%;
+	margin-top: 15%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2rem 0 4rem 2.5rem;	
+	background-color: hsl(255,100%,100%);
+	border-radius: 15px;
+	box-shadow: 3.5px 3.5px 1px hsl(0, 0%, 65%);
+}
+
+.container--form{
+	display: grid;
+	grid-template-areas:
+	"label1 label2 ."
+	"input select btn";
+	grid-template-columns: 1fr 1.3fr 1fr;
+	grid-template-rows: 1fr 1.5fr;
+	align-items: center;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container--form > .form--label:first-of-type{
+	grid-area: label1;
+	color: hsl(0, 0%, 70%);
+	font-size: 1rem;
+}
+
+.container--form > .form--input_number{
+	grid-area: input;
+	border-radius: 3px;
+	border: 0.1rem solid hsl(0, 0%, 85%);
+	padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+	width: 7rem;
+	color: hsl(0, 0%, 0%);
+	font-weight: 100;
+
+}
+
+#number_field:focus { 
+	outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+#number_field::-webkit-outer-spin-button,
+#number_field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#number_field[type=number] {
+	-moz-appearance: textfield;
+} 
+
+.container--form > .form--label:last-of-type{
+	grid-area: label2;
+	color: hsl(0, 0%, 70%);
+	font-size: 1rem;
+}
+
+.container--form > .form--select{
+	grid-area: select;
+	border-radius: 3px;
+	border: 0.1rem solid hsl(0, 0%, 85%);
+	padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+	width: 10rem;
+	color: hsl(0, 0%, 0%);
+	font-weight: 100;
+}
+
+#type_select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: transparent;
+	background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+	background-repeat: no-repeat;
+	background-position-x: 100%;
+	background-position-y: 5px;
+}
+
+#type_select:focus{
+	outline: none;
+}
+
+.container--form > .form--button{
+	grid-area: btn;
+	background-color: hsl(240, 100%, 50%);
+	padding: 0.4rem 0 0.4rem 0;
+	text-transform: capitalize;
+	color: hsl(0, 0%, 100%);
+	letter-spacing: 0.1em;
+	padding: 0.8em 0 0.8em 0 ;
+	border-radius: 4px;
+	font-weight: 900;
+	width: 6.5em;
+}
+
+.container--paragraph_converted_result{
+	margin-bottom: 0.5rem;
+	text-transform: capitalize;
+	font-weight: lighter;
+	font-size: 1.2em;
+	color: hsl(0, 0%, 70%);
+}
+
+.container--paragraph-show{
+	font-size: 1.5em;
+	font-weight: 900;
+	color: hsl(0, 0%, 0%);
+	height: 0.5rem;
+}
