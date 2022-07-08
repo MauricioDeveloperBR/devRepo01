@@ -1,6 +1,6 @@
 /*
 *   Author: Maurício Ferreira
-    Date: 2022/06/08
+    Date: 2022/07/08
 *
 */
 
@@ -48,9 +48,9 @@ function displayResult(){
 	let space_result = document.querySelector(".container--paragraph-show");
 	
 	if(display[1] === 'Celsius'){
-		space_result.innerHTML = '°C ' + display[0];
+		space_result.innerHTML = display[0] + ' °C';
 	}else{
-		space_result.innerHTML = '°F  ' + display[0];
+		space_result.innerHTML = display[0] + ' °F';
 	}
 }
 
