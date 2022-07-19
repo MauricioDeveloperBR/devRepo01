@@ -20,7 +20,7 @@ Fazer a conversão de unidades de temperatura de Celsius para Fahrenheit e vice 
 
 Para rodar o repositório é necessário clonar o mesmo e  seguir os seguintes passos para iniciar o projeto:
 
-1. Acesse o diretório **src/**
+1. Acesse o diretório **public/**
 2. Dê um duplo click com o botão direito do mouse
 sobre o arquivo **index.html**
 
